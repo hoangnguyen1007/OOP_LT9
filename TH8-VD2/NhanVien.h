@@ -2,17 +2,17 @@
 #include <iostream>
 #include <string>
 using namespace std;
-class VE
+class NhanVien
 {
 protected:
-	string ma_ve, ho_ten;
-	int nam_sinh, so_tro_choi;
+	string ma_nv, ho_ten, sdt, email;
+	int tuoi;
+	long long luong_co_ban;
 public:
-	virtual ~VE();
+	virtual ~NhanVien();
 	virtual void Nhap();
 	virtual void Xuat() const;
 	virtual string getLoai() const = 0;
-	virtual int tinhGiaVe() const = 0;
-	string getMaVe() const;
+	virtual long long tinhLuong() const = 0;
 };
 
